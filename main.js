@@ -1,4 +1,4 @@
-// requisite MongoDB libraries
+// requisite libraries
 const express = require('express')
 const axios = require('axios')
 var f = require('util').format;
