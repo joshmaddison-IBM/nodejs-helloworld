@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-helloworld
+spec:
+  selector:
+    matchLabels:
+      app: node-helloworld
+  template:
+    metadata:
+      labels:
+        app: node-helloworld
+    spec:
+      containers:
+      - name: node-helloworld
+        image: eljosho96/node-helloworld
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
