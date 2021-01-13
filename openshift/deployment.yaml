@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: node-helloworld
-        image: image-registry.openshift-image-registry.svc:5000/jm-pipelines-testing/jm-node-helloworld:037c4b5
+        image: image-registry.openshift-image-registry.svc:5000/jm-pipelines-testing/jm-node-helloworld:92e9d96
         resources:
           limits:
             memory: 128Mi
