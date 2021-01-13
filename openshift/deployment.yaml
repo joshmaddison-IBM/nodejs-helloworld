@@ -13,10 +13,10 @@ spec:
     spec:
       containers:
       - name: node-helloworld
-        image: eljosho96/node-helloworld
+        image: image-registry.openshift-image-registry.svc:5000/jm-pipelines-testing/jm-node-helloworld:037c4b5
         resources:
           limits:
-            memory: "128Mi"
-            cpu: "500m"
+            memory: 128Mi
+            cpu: 500m
         ports:
         - containerPort: 8080
